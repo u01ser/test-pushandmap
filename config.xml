@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.itevelesa.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>MyApp</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework.com" href="http://ionicframework.com/">Ionic Framework Team</author>
@@ -101,4 +101,11 @@
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <preference name="GOOGLE_MAPS_IOS_API_KEY" value="" />
     <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="" />
+    <preference name="GOOGLE_MAPS_PLAY_SERVICES_VERSION" value="15.0.1" />
+    <platform name="android">
+        <resource-file src="google-services.json" target="app/google-services.json" />
+    </platform>
+    <platform name="ios">
+        <resource-file src="GoogleService-Info.plist" />
+    </platform>
 </widget>

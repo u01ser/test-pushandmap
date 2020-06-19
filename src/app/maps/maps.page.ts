@@ -33,7 +33,6 @@ export class MapsPage implements OnInit {
           tilt: 30
         }
       });
-
   }
 
 }
